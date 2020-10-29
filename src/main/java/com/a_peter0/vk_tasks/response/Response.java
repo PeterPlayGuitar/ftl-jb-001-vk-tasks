@@ -7,7 +7,7 @@ import java.util.List;
 
 @Getter
 @ToString
-public class UserSearchResponse {
-
-    private Response<UserResponse> response;
+public class Response<T> {
+    private Integer count;
+    private List<T> items;
 }
